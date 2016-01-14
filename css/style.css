@@ -1766,3 +1766,13 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 .main1{
   display: none;
 }
+
+#over{
+  z-index:100;
+  position:absolute;    
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+  left:30%;
+  top:30%;
+}
