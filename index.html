@@ -9,10 +9,10 @@
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/idangerous.swiper.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="carousel/style.css">
+    <link rel="stylesheet" href="carousel/jquery.circular-carousel.css">
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="carousel/jquery.carousel-3d.default.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
   	<title>Histrionica</title>
@@ -938,19 +938,27 @@
         </div>-->
 
         
-<script src="carousel/jquery.resize.js"></script>
-<script src="carousel/jquery.waitforimages.js"></script>
-<script src="carousel/jquery.carousel-3d.js"></script>
-
-        <!-- GALLERY -->
-          <div id="gallery" class="wrapper">
-            <div data-carousel-3d>
-              <img src="./image/1.jpg" />
-              <img src="./image/3.jpg" selected/>
-              <img src="./image/4.jpg" />
-              <img src="./image/5.jpg" />
-              <img src="./image/6.jpg" />
+<div class="main-block clearfix" id="gallery">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="block-header style-2">
+                  <h2 class="block-title">Gallery</h2>
+                </div>
+              </div>
             </div>
+          </div>
+            <ul class="carousel">
+              <li class="item active"><img src="./image/1.jpg" /></li>
+              <li class="item"><img src="./image/3.jpg" /></li>
+              <li class="item"><img src="./image/4.jpg" /></li>
+              <li class="item"><img src="./image/5.jpg" /></li>
+              <li class="item"><img src="./image/6.jpg" /></li>
+            </ul>
+            <div class="controls">
+              <a href="#" class="previous">Previous</a> 
+              <a href="#" class="next">Next</a>
+            </div>  
           </div>
 		
 
@@ -1405,6 +1413,8 @@ Ayush Golchha<br>
     <script src="js/global.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="carousel/jquery.circular-carousel.js"></script> 
+    <script src="carousel/script.js"></script>
     
      <script>
               new WOW().init();
