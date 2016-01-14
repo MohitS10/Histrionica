@@ -49,7 +49,7 @@
 @import url();*/
 @font-face {
     font-family: "Rock Salt";
-    src: url(Existece-Light.ttf) format("truetype");
+    src: url(Existence-Light.ttf) format("truetype");
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
@@ -1760,4 +1760,8 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 .meramann img{
   width: 100px;
+}
+
+.main{
+  display: none;
 }
