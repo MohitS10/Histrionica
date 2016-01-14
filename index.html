@@ -48,7 +48,7 @@
                     <li><a class="anchor-scroll" href="#events">events</a></li>
                     <li><a class="anchor-scroll" href="#gallery">gallery</a></li>
                     <li><a class="anchor-scroll" href="#partners">partners</a></li>
-                    <li><a class="register" data-toggle="modal" data-target="#event4">Register</a></li>
+                    <li><a class="register" data-toggle="modal" data-target="#reg">Register</a></li>
                     <!-- <li><a class="anchor-scroll" href="#schedule">schedule</a></li> -->
                     <li><a class="anchor-scroll" href="#speakers">team</a></li>
                     <li><a class="anchor-scroll" href="#contact">contact</a></li>
@@ -1339,7 +1339,152 @@ Ayush Golchha<br>
 </div>
 -->
 
-<div class="modal fade" id="event4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Register -->
+<div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modalwide" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Registration</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+		 	<div class="form-group">
+			  <div class="col-md-8">
+			    <button id="teamcoord" name="teamcoord" class="btn btn-success" data-toggle="modal" data-target="#teamc">Register as Team Coordinator</button>
+			    <button id="indi" name="indi" class="btn btn-danger" data-toggle="modal" data-target="#ind">Register as Participant</button>
+			  </div>
+			</div>	
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Team Coordinator -->
+<div class="modal fade" id="teamc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modalwide" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Registration</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+		  
+		  <form class="form-horizontal">
+			<fieldset>
+
+			<!-- Form Name -->
+			<legend>Register</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="nameOfCollege">Name Of College</label>  
+			  <div class="col-md-5">
+			  <input id="nameOfCollege" name="nameOfCollege" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="nameOfPlay">Name Of Play</label>  
+			  <div class="col-md-5">
+			  <input id="nameOfPlay" name="nameOfPlay" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="numberOfTeamMembers">Number Of Team Members</label>  
+			  <div class="col-md-4">
+			  <input id="numberOfTeamMembers" name="numberOfTeamMembers" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="coord1">Team Coordinator 1</label>  
+			  <div class="col-md-5">
+			  <input id="coord1" name="coord1" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="contact1">Contact Number</label>  
+			  <div class="col-md-4">
+			  <input id="contact1" name="contact1" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="coord2">Team Coordinator 2</label>  
+			  <div class="col-md-5">
+			  <input id="coord2" name="coord2" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="contact2">Contact Number</label>  
+			  <div class="col-md-4">
+			  <input id="contact2" name="contact2" type="text" placeholder="" class="form-control input-md" required="">
+			    
+			  </div>
+			</div>
+
+			<!-- Textarea -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="synopsis">Synopsis (limit 100 words)</label>
+			  <div class="col-md-4">                     
+			    <textarea class="form-control" id="synopsis" name="synopsis"></textarea>
+			  </div>
+			</div>
+
+			<!-- File Button --> 
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="script">Script</label>
+			  <div class="col-md-4">
+			    <input id="script" name="script" class="input-file" type="file">
+			  </div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="submitform2">Submit</label>
+			  <div class="col-md-4">
+			    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+			  </div>
+			</div>
+
+			</fieldset>
+			</form>
+
+		  </div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Individual -->
+<div class="modal fade" id="ind" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modalwide" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -1355,12 +1500,120 @@ Ayush Golchha<br>
 		  <div class="tab-content">
 		    <div id="aahvaan" class="tab-pane fade in active">
 		      <h3>Aahvaan</h3>
-		        
+		      <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registration</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-5">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email ID</label>  
+  <div class="col-md-5">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameOfCollege">Name Of College</label>
+  <div class="col-md-5">
+    <select id="nameOfCollege" name="nameOfCollege" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameOfPlay">Name Of Play</label>  
+  <div class="col-md-5">
+  <input id="nameOfPlay" name="nameOfPlay" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submitform2">Submit</label>
+  <div class="col-md-4">
+    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+  
 		        
 		    </div>
 		    <div id="charades" class="tab-pane fade">
 		      <h3>Charades</h3>
-		        
+		        <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registration</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-5">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email ID</label>  
+  <div class="col-md-5">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameOfCollege">Name Of College</label>
+  <div class="col-md-5">
+    <select id="nameOfCollege" name="nameOfCollege" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameOfPlay">Name Of Play</label>  
+  <div class="col-md-5">
+  <input id="nameOfPlay" name="nameOfPlay" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submitform2">Submit</label>
+  <div class="col-md-4">
+    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
 		    </div>
 		  </div>
 		</div>
@@ -1379,6 +1632,52 @@ Ayush Golchha<br>
     	<div class="container">
     		<img class="f-logo" src="img/footer_dark.png" alt="">
     		<div class="copy">Rahul and Mohit</div>
+    	</div>
+    	<div class="container">
+    		<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-5">
+  <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailid">Email</label>  
+  <div class="col-md-5">
+  <input id="emailid" name="emailid" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contact">Contact Number</label>  
+  <div class="col-md-4">
+  <input id="contact" name="contact" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="enquiry">Query</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="enquiry" name="enquiry"></textarea>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
     	</div>
     </footer>
 
