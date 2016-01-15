@@ -671,7 +671,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .team-img { display: block; margin-bottom: 15px; }
 .team-img img { width: 100%; }
 .team-title { display: inline-block; font-size: 20px; line-height: 24px; font-weight: 600; color: #222; margin-bottom: 7px; }
-.team-title:hover { color: #feca16; }
+./*team-title:hover { color: #feca16; }*/
 .team-pos { font-size: 12px; line-height: 15px; font-weight: 400; color: #848484; text-transform: uppercase; margin-bottom: 7px; }
 .team-text { font-size: 13px; line-height: 24px; font-weight: 400; color: #8a8a8a; margin-bottom: 10px; }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -1781,6 +1781,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 
+
 .opaque-navbar {
     background-color: rgba(0,0,0,0.0);
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
@@ -1841,4 +1842,8 @@ height:30px; width:auto;
   color: #fff;
 
   background-color: #000;
+}
+
+.enquiry{
+  color:white;
 }
