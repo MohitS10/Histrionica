@@ -49,7 +49,7 @@
 @import url();*/
 @font-face {
     font-family: "Rock Salt";
-    src: url(Existence-Light.otf) format("truetype");
+    src: url(Existence-Light.ttf) format("truetype");
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
@@ -1546,6 +1546,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .simple-slider .pagination { display: inline-block; }
   .main-slider .counter-wrapper { position: static; background: #222; }
   .item-30, .item-40 { width: 100%; }
+  .item-50, .item-35 { width: 100%; }
   .conf-item.big { min-height: 345px; }
   .speaker-img { height: 300px; }
   .shedule-block { padding-top: 60px; }
@@ -1775,4 +1776,69 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   font-weight:bold;
   left:30%;
   top:30%;
+}
+
+
+
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.0);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+
+
+
+.opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
+.opaque-navbar li.active a:before, .opaque-navbar li:hover a:before { background: #d14233; }
+
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+#navMain li a{color:#fff; background-color: transparent; font-size: 10px}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+@media (max-width: 992px) {
+  .opaque-navbar {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: #000; }
+#navMain li a{background-color: #000;}
+
+}
+
+
+@media(max-width: 479px){
+  #over{left:10%;}
+#over img{ width: 300px;}
+#over { font-size: 20px;}
+}
+
+.longLogo{
+height:30px; width:auto;
+};
+
+.hide{
+  display:none;
+}
+
+
+#gallery{
+  color: #fff;
+
+  background-color: #000;
 }

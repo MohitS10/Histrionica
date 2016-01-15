@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="carousel/jquery.circular-carousel.css">
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.flipster.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
   	<title>Histrionica</title>
@@ -37,7 +38,7 @@
 <div>
     <!-- HEADER -->
    <div id="headerup">
-    <header class="header type-1 wow fadeIn" data-wow-delay="4s">
+    <!-- <header class="header type-3 wow fadeIn" data-wow-delay="4s">
     	<div class="container">
             <div class="logo-block">
 			     <a class="logo" href="#"><img src="assets/img/logo.png" alt="" style="height:20px; width:auto; "></a>
@@ -49,15 +50,36 @@
                     <li><a class="anchor-scroll" href="#gallery">gallery</a></li>
                     <li><a class="anchor-scroll" href="#partners">partners</a></li>
                     <li><a class="register" data-toggle="modal" data-target="#reg">Register</a></li>
-                    <!-- <li><a class="anchor-scroll" href="#schedule">schedule</a></li> -->
+           
                     <li><a class="anchor-scroll" href="#speakers">team</a></li>
                     <li><a class="anchor-scroll" href="#contact">contact</a></li>
                 </ul>				
 			</nav>
             <button class="cmn-toggle-switch"><span></span></button>
     	</div>
-    </header>
+    </header> -->
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar wow fadeIn" data-wow-delay="4s">
+  <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  		<span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+  	</button>
+    <a class="navbar-brand" href="#"><img  id="logotop" src="assets/img/logo.png" alt="" class="longLogo hide"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right anchor-navigation">
+        <li><a class="anchor-scroll" href="#events">EVENTS</a></li>
+        <li><a class="anchor-scroll" href="#gallery">GALLERY</a></li>
+		<li><a class="anchor-scroll" href="#partners">PARTNERS</a></li>
+        <li><a class="register" data-toggle="modal" data-target="#reg">REGISTER</a></li>
+		<li><a class="anchor-scroll" href="#speakers">TEAM</a></li>
+		<li><a class="anchor-scroll" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
    </div>
+
 
 
 
@@ -84,7 +106,7 @@
                         	<div class="vertical-align">
                        			<div class="container">
 	                        		<div class="banner-block style-2">
-										<h3 class="banner-title">Coming Soon!</h3>
+										<!-- <h3 class="banner-title">Coming Soon!</h3> -->
 	                        		</div> 
                         		</div>
                         	</div>                        		
@@ -99,16 +121,14 @@
                 	</div>
 
                 		
-                <div class="pagination"></div>
-				<div class="swiper-arrow-left style-3 wow fadeIn" data-wow-delay="4s"><img src="assets/img/arrow_left_3.png" alt=""></div>  
-				<div class="swiper-arrow-right style-3 wow fadeIn" data-wow-delay="4s"><img src="assets/img/arrow_right_3.png" alt=""></div>         
+               
             	</div> 
         	</div>
         </div>
         <div class="banner-block style-1" id="over">
-										<h3 class="banner-date wow bounceInUp"><span>The Dramatics Society of SRCC Presents</span></h3>
-										<h2 class="banner-title wow zoomInRight" data-wow-delay="2s"><img src="assets/img/logo.png"></h2>
-										<h4 class="banner-date wow fadeIn" data-wow-delay="3s">Annual Performing Arts Festival</h4>
+								<h3 class="banner-date wow bounceInUp "><span>The Dramatics Society of SRCC Presents</span></h3>
+								<h2 class="banner-title wow zoomInRight" data-wow-delay="2s"><img src="assets/img/logo.png"></h2>
+								<h4 class="banner-date wow fadeIn" data-wow-delay="3s">Annual Performing Arts Festival</h4>
 		</div>
 
      </div>
@@ -237,9 +257,9 @@
 							<div class="conf-item small">
 								<img class="center-image" src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10468678_719985548120141_5527019741525548039_n.jpg?oh=24015815eab2a0ee722d51e4755d5c9b&oe=5702A48D" alt="">
 								<div class="conf-info style-2">
-									<div class="conf-date">Registration Open!</div>
+									<div class="conf-date hidden-xs">Registration Open!</div>
 									<h4 class="conf-title">Aahvaan(Street Play)</h4>
-									<div class="conf-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
+									<div class="conf-text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
 									<a class="conf-btn" href="#">view more</a>
 									<div class="conf-autors">
 										<a href="#"><img  class="uchotu" src="assets/team/01.jpg" alt=""></a>
@@ -254,9 +274,9 @@
 							<div class="conf-item small">
 								<img class="center-image" src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10468678_719985548120141_5527019741525548039_n.jpg?oh=24015815eab2a0ee722d51e4755d5c9b&oe=5702A48D" alt="">
 								<div class="conf-info style-2">
-									<div class="conf-date">Registration Open!</div>
+									<div class="conf-date hidden-xs">Registration Open!</div>
 									<h4 class="conf-title">Aahvaan(Street Play)</h4>
-									<div class="conf-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
+									<div class="conf-text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
 									<a class="conf-btn" href="#">view more</a>
 									<div class="conf-autors">
 										<a href="#"><img  class="uchotu" src="assets/team/01.jpg" alt=""></a>
@@ -272,9 +292,9 @@
 							<div class="conf-item small">
 								<img class="center-image" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10420051_721148804670482_8210139699778548081_n.jpg?oh=1f79a567ff325260c3d74f98e24b65f7&oe=56FE5469&__gda__=1459676511_ef590143ad5f7a06878dbb50cc0119ab" alt="">
 								<div class="conf-info style-2">
-									<div class="conf-date">Registration Open!</div>
+									<div class="conf-date hidden-xs">Registration Open!</div>
 									<h4 class="conf-title">Charades(Stage Play)</h4>
-									<div class="conf-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
+									<div class="conf-text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
 									<a class="conf-btn" href="#">view more</a>
 									<div class="conf-autors">
 										<a href="#"><img  class="uchotu" src="assets/team/02.jpg" alt=""></a>
@@ -288,9 +308,9 @@
 							<div class="conf-item small">
 								<img class="center-image" src="http://dubeat.com/wp-content/uploads/IMG_73341.jpg" alt="">
 								<div class="conf-info style-2">
-									<div class="conf-date">Coming Soon!</div>
+									<div class="conf-date hidden-xs">Coming Soon!</div>
 									<h4 class="conf-title">Stand Up Comedy</h4>
-									<div class="conf-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
+									<div class="conf-text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
 									<a class="conf-btn" href="#">view more</a>
 									<div class="conf-autors">
 										<a href="#"><img src="img/author_1.jpg" alt=""></a>
@@ -306,9 +326,9 @@
 							<div class="conf-item small">
 								<img class="center-image" src="http://dubeat.com/wp-content/uploads/IMG_73341.jpg" alt="">
 								<div class="conf-info style-2">
-									<div class="conf-date">Coming Soon!</div>
+									<div class="conf-date hidden-xs">Coming Soon!</div>
 									<h4 class="conf-title">Stand Up Comedy</h4>
-									<div class="conf-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
+									<div class="conf-text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
 									<a class="conf-btn" href="#">view more</a>
 									<div class="conf-autors">
 										<a href="#"><img src="img/author_1.jpg" alt=""></a>
@@ -931,7 +951,7 @@
                 		</div>
                 	</div>              	                	
                 </div>
-                <div class="more-block">
+                <div class="more-block">file:///C:/Users/Dellpc/Documents/MohitS10.github.io/image/3.jpg
                 	<a class="c-btn b-50 black hv-dark-t" href="#">load more posts</a>
                 </div>
             </div>
@@ -942,23 +962,50 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                <div class="block-header style-2">
+                <div class="block-header style-3">
+                	<h4 class="block-category"></h4>
                   <h2 class="block-title">Gallery</h2>
                 </div>
               </div>
+
             </div>
-          </div>
-            <ul class="carousel">
-              <li class="item active"><img src="./image/1.jpg" /></li>
-              <li class="item"><img src="./image/3.jpg" /></li>
-              <li class="item"><img src="./image/4.jpg" /></li>
-              <li class="item"><img src="./image/5.jpg" /></li>
-              <li class="item"><img src="./image/6.jpg" /></li>
-            </ul>
-            <div class="controls">
-              <a href="#" class="previous">Previous</a> 
-              <a href="#" class="next">Next</a>
-            </div>  
+
+       <div id="coverflow">
+        <ul class="flip-items">
+            <li data-flip-title="Red">
+                <img src="image/1.jpg">
+            </li>
+            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                <img src="image/3.jpg">
+             </li>
+            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                <img src="img/text3.gif">
+            </li>
+            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                <img src="img/text4.gif">
+            </li>
+            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                <img src="img/text5.gif">
+            </li>
+            <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+                <img src="image/6.jpg">
+            </li>
+            <li data-flip-title="Cyan" data-flip-category="Blues">
+                <img src="img/text7.gif">
+            </li>
+            <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+                <img src="img/text8.gif">
+            </li>
+            <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                <img src="img/text9.gif">
+            </li>
+            <li data-flip-title="Apple" data-flip-category="Greens">
+                <img src="img/text10.gif">
+            </li>
+        </ul>
+    </div>
+
+    </div>  
 </div>
 		
 
@@ -1696,9 +1743,19 @@ Ayush Golchha<br>
     <script src="js/global.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="carousel/jquery.circular-carousel.js"></script> 
-    <script src="carousel/script.js"></script>
-    
+    <script src="js/jquery.flipster.min.js"></script>
+    <script>
+   			  $(window).scroll(function() {
+    if($(this).scrollTop() > 150)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+        $('#logotop').removeClass('hide');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+        $('#logotop').addClass('hide');
+    }
+});
+   	</script> 
      <script>
               new WOW().init();
      </script>
@@ -1706,10 +1763,19 @@ Ayush Golchha<br>
 
     <script>
     var mySwiper = new Swiper('.swiper-container',{
-    autoplay: 8000,
+    autoplay: 7000,
     loop: true
 	});   
     </script>
+
+    <script>
+    var coverflow = $("#coverflow").flipster();
+    $("#coverflow").flipster({
+    	loop: true,
+
+    });
+
+	</script>
 
 
     <script>
