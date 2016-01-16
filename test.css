@@ -1,58 +1,39 @@
-.intro {
+#about{
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background:linear-gradient(rgba(101, 0, 6, 0.8), rgba(0, 0, 0, 0.94)),url(https://upload.wikimedia.org/wikipedia/en/1/11/Varkala_Beach_High_Res.jpg) no-repeat bottom center scroll;
-    background-repeat: repeat-x;
-    -webkit-animation:movebg 150s linear infinite;
-    animation:movebg 150s linear infinite;
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(http://thomso.in/static/home/img/about-bg.png) no-repeat bottom center scroll;
+    -webkit-animation:about-bg 200s linear infinite;
+    /* Safari and Chrome */
+    animation:about-bg 200s linear infinite;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-
-@keyframes movebg {
+@media(max-width:768px) {
+    #about .about-text{
+        padding: 0 30px;
+    }
+}
+@keyframes about-bg {
     from {
-        background-position: 100% 0px;
+        background-position: 20% 0px;
     }
     to {
-        background-position: 0% 0px;
+        background-position: 100% 0px;
     }
 }
-@-webkit-keyframes movebg
+@-webkit-keyframes about-
 /* Safari and Chrome */
  {
-    from { left: 0; }
-    to { left: -2000px; }
-}
-
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body img{
-    height:200px;
-    margin-left:-40px; 
-}
-
-.intro .intro-body .b-heading {
-    font-size: 40px;
-} 
-
-
-.intro .intro-body .intro-text {
-    margin:20px auto 0; 
-    width: 380px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 100;
-    color: #FDC900;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-top: 10px;
-    border-top: 2px solid #FDC900;
+    from {
+        background-position: 20% 0px;
+    }
+    to {
+        background-position: 100% 0px;
+    }
 }

@@ -71,9 +71,10 @@
         <li><a class="anchor-scroll" href="#events">EVENTS</a></li>
         <li><a class="anchor-scroll" href="#gallery">GALLERY</a></li>
 		<li><a class="anchor-scroll" href="#partners">PARTNERS</a></li>
-        <li><a class="register" data-toggle="modal" data-target="#reg">REGISTER</a></li>
+       
 		<li><a class="anchor-scroll" href="#speakers">TEAM</a></li>
 		<li><a class="anchor-scroll" href="#contact">CONTACT</a></li>
+     <li id="register"><a class="register" data-toggle="modal" data-target="#reg">REGISTER</a></li>
       </ul>
     </div>
   </div>
@@ -208,9 +209,11 @@
    		<div class="container"> 
    			<div class="block-header">
    			<div class="banner-fake">
-   			<div class="col-xs-6">
-   				<div class="banner-title up yo" style="float:left" >Ulta</div>
-   				<div class="banner-title yo" style="float:left">PULTA</div>
+   			<div class="col-xs-6 wow bounceIn" data-wow-delay:"1s">
+          <!-- <img src="assets/img/logo.png" id="cool" style="display:none"> -->
+   				<div class="banner-title up yo" style="float:left;" id="ulta">Ulta</div>
+   				<div class="banner-title yo" style="float:left">PULTA</div><br><br>
+          
    				<br><br>
    			</div>
    				<div class = "col-xs-6">
@@ -244,6 +247,7 @@
         			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         				<div class="block-header style-2">
 	        				<h2 class="block-title">Events</h2>
+                  <hr>
         				</div>
         			</div>
         		</div>
@@ -340,7 +344,7 @@
 					</div>        		
 	        	</div>
         	</div>
-        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br>
 
 		<!-- SERVICE -->
 		<!--
@@ -945,17 +949,19 @@
         </div>-->
 
         
-<div class="main-block clearfix" id="gallery">
+<div class="main-block clearfix diagonal" id="gallery">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                 <div class="block-header style-3">
-                	<h4 class="block-category"></h4>
-                  <h2 class="block-title">Gallery</h2>
+                	
+                  <h2 class="block-title" style="color:#fff">Gallery</h2>
+                  <hr>
+
                 </div>
               </div>
-
             </div>
+            
 
        <div id="coverflow">
         <ul class="flip-items">
@@ -1137,6 +1143,7 @@
                 	</div>                	                	
                 </div>             
             </div>
+            <!-- <div class="btn btn-large btn-danger">Download our media plan</div> -->
         </div>
 
         
@@ -1146,6 +1153,7 @@
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                         <div class="block-header style-2">
                             <h2 class="block-title">Meet our Team</h2>
+                            <h4 class="block-desc">Drag us and make us Ulta Pulta!</h4>
                         </div>
                     </div>
                 </div>
@@ -1674,9 +1682,6 @@ Ayush Golchha<br>
 		      <form class="form-horizontal">
 <fieldset>
 
-<!-- Form Name -->
-<legend>Registration</legend>
-
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="name">Name</label>  
@@ -1719,7 +1724,7 @@ Ayush Golchha<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="submitform2">Submit</label>
   <div class="col-md-4">
-    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+    <button id="submitform2" name="submitform2" class="btn btn-inverse">Go!</button>
   </div>
 </div>
 
@@ -1727,14 +1732,13 @@ Ayush Golchha<br>
 </form>
   
 		        
-		    </div>
+</div>
 		    <div id="charades" class="tab-pane fade">
 		      <h3>Charades</h3>
 		        <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Registration</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -1778,7 +1782,7 @@ Ayush Golchha<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="submitform2">Submit</label>
   <div class="col-md-4">
-    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+    <button id="submitform2" name="submitform2" class="btn btn-inverse">Go!</button>
   </div>
 </div>
 
@@ -1820,6 +1824,7 @@ Ayush Golchha<br>
     <script src="js/wow.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.flipster.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script>
    			  $(window).scroll(function() {
     if($(this).scrollTop() > 150)  /*height in pixels when the navbar becomes non opaque*/ 
@@ -1852,12 +1857,22 @@ Ayush Golchha<br>
     });
 
 	</script>
-
+  <script>
+  $(function() {
+  $( ".team-entry" ).draggable();
+});
+  </script>
 
     <script>
     $('#ultapulta').click(function(){
     	$('#upcontent').toggleClass("up");
+      $('#upcontent').toggleClass("spin")
     	$('#upcontent').toggleClass("down");
+      $('#ulta').toggleClass("up");
+      $('#ulta').toggleClass("spin")
+      $('#ulta').toggleClass("down");
+      $('#cool').show();
+
     })
     </script>
  

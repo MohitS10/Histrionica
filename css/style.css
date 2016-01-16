@@ -48,23 +48,26 @@
 @import url(https://fonts.googleapis.com/css?family=Norican&subset=latin,latin-ext);
 @import url();*/
 @font-face {
-    font-family: "Rock Salt";
+    font-family: "Exit";
     src: url(Existence-Light.ttf) format("truetype");
 }
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html,body { max-width: 100%; overflow-x: hidden; }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 body * { -webkit-text-size-adjust: none; }
+
 .clear { clear: both; overflow: hidden; height: 0px; font-size: 0px; display: block; }
 input:focus, select:focus, textarea:focus, button:focus { outline: none; }
-input, textarea, select { font-family: 'Lato', sans-serif, Arial; font-weight: 400; -webkit-appearance: none; -moz-border-radius: 0; border-radius: 0; }
+/*input, textarea, select { font-family: 'Lato', sans-serif, Arial; font-weight: 400; -webkit-appearance: none; -moz-border-radius: 0; border-radius: 0; }*/
 a, a:link, a:visited, a:active, a:hover { cursor: pointer; text-decoration: none; outline: none; }
-body { font-family: 'regular', sans-serif, Arial; font-weight: normal; font-size: 14px; line-height: 1; overflow-y: scroll; }
+body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; line-height: 1; overflow-y: scroll; }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 03 - LOADING */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -362,7 +365,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .block-header { text-align: center; padding-top: 120px; margin-bottom: 69px; }
 .block-header2 { text-align: left; padding-top: 120px; margin-bottom: 69px; }
 .block-category { font-size: 18px; line-height: 18px; font-weight: 400; color: #feca16; letter-spacing: 3.5px; margin-bottom: 19px; }
-.block-title {font-family: 'Rock Salt',cursive; font-size: 36px; line-height: 40px; font-weight: 800; color: #222222; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
+.block-title {font-family: 'Exit',cursive; font-size: 36px; line-height: 40px; font-weight: 800; color: #222222; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 24px; }
 .block-text { font-size: 16px; line-height: 28px; font-weight: 400; color: #959595; }
 .bg-grey { background: #f4f4f4; }
 .bg-dark { background: #222; }
@@ -394,21 +397,21 @@ body { font-family: 'Open Sans', sans-serif; }
 .conf-item.big { min-height: 720px; }
 .conf-item.small { min-height: 345px; }
 .conf-info { position: absolute; bottom: 41px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); text-align: center; width: 100%; z-index: 2; }
-.conf-title { font-size: 32px; line-height: 35px; font-weight: 800; color: #fff; letter-spacing: 1px; margin-bottom: 24px; }
-.conf-text { display: table; font-size: 12px; line-height: 15px; font-weight: 400; color: #fff; text-transform: uppercase; background: #feca16; padding: 7.5px 9px; margin: 0 auto 41px auto; }
+.conf-title { font-family:'Exit';font-size: 32px; line-height: 35px; font-weight: 800; color: #fff; letter-spacing: 1px; margin-bottom: 24px; }
+.conf-text { display: none; font-size: 12px; line-height: 15px; font-weight: 400; color: #fff; text-transform: uppercase; background: #feca16; padding: 7.5px 9px; margin: 0 auto 41px auto; }
 .conf-info .c-btn { color: #fff; border: 1px solid rgba(255, 255, 255, 0.5); background: transparent; }
 .conf-autors { display: none; padding-top: 40px; }
 .conf-autors img { -moz-border-radius: 100%; border-radius: 100%; }
 .conf-autors a { margin-right: 16px; }
 .conf-autors a:last-child { margin-right: 0px; }
 .conf-overlay { position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background: #feca16; opacity: 0; }
-.conf-item:hover .conf-text { color: #222; background: #fff; }
+.conf-item:hover .conf-text {display: block; color: #222; background: #fff; }
 .conf-item:hover .c-btn { color: #222; background: #fff; border-color: #fff; }
 .conf-item:hover .c-btn:hover { background: transparent; color: #fff; }
 .conf-item:hover .conf-overlay { opacity: 0.6; }
 .conf-item:hover .conf-autors a:hover { opacity: 0.6; }
 .conf-info.style-2 { bottom: 52px; }
-.conf-info.style-2 .conf-date { font-family: 'Norican'; font-size: 18px; line-height: 22px; font-weight: 400; color: #fff; margin-bottom: 15px; }
+.conf-info.style-2 .conf-date { font-family: 'Exit'; font-size: 18px; line-height: 22px; font-weight: 400; color: #fff; margin-bottom: 15px; }
 .conf-info.style-2 .conf-title { font-size: 28px; line-height: 28px; margin-bottom: 18px; }
 .conf-info.style-2 .conf-text { display: block; font-size: 13px; line-height: 24px; color: rgba(255, 255, 255, 0.8); padding: 0px 15px; margin-bottom: 32px; background: transparent; text-transform: initial; }
 .conf-info.style-2 .conf-btn { position: relative; font-size: 12px; line-height: 15px; font-weight: 700; color: #fff; text-transform: uppercase; padding-bottom: 8px; }
@@ -1563,7 +1566,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .counters-block { display: table; margin-left: auto; margin-right: auto; margin-bottom: 18px; }
   .message-entry { display: block; text-align: center; margin-bottom: 15px; }
   .gal-title { font-size: 22px; line-height: 22px; }
-  .team-entry { max-width: 400px; margin: 0 auto 15px auto;  }
+  .team-entry { max-width: 400px; margin: 0 auto 15px auto; }
   .left-banner-title { font-size: 29px; line-height: 29px; }
   .left-banner-block { position: static; background-image: none !important; margin-bottom: 30px; }
   .left-banner-block .center-image { display: block !important; width: 100%; }
@@ -1676,7 +1679,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 .modal-title{
-  font-family: 'Rock Salt',cursive;
+  font-family: 'Exit',cursive;
   font-size: 40px;
 }
 
@@ -1700,6 +1703,23 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   height: 50px;
 }
 
+@-webkit-keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(2520deg);
+    }
+}
+
+.spin{
+  -webkit-animation-name: spin;
+    -webkit-animation-duration: 2800ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+}
+
+
 .up{
   -webkit-transform:rotateY(180deg);
   -webkit-transform:rotateX(180deg);
@@ -1718,10 +1738,13 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 #theme{
-  background: url(http://orig14.deviantart.net/dedb/f/2011/162/d/0/runway_background_by_megumitt-d3ilql1.png);
+  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(http://orig14.deviantart.net/dedb/f/2011/162/d/0/runway_background_by_megumitt-d3ilql1.png) no-repeat scroll;
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 120px;
+}
+.ults{
+  -webkit-transform:rotateX(60deg);
 }
 
 .yo{
@@ -1729,6 +1752,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 }
 
 .themr{
+  font-size: 20px;
   color: #fff;
   float: left;
   text-align: left;
@@ -1803,7 +1827,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
     transition: background-color .5s ease 0s;
 }
 
-#navMain li a{color:#fff; background-color: transparent; font-size: 10px}
+#navMain li a{font-family: 'Exit';color:#fff; background-color: transparent; font-size: 12px}
 
 ul.dropdown-menu {
     background-color: black;
@@ -1838,12 +1862,31 @@ height:30px; width:auto;
 }
 
 
-#gallery{
-  color: #fff;
-
-  background-color: #000;
+#gallery.diagonal{
+  /*position: relative;*/
+background: -moz-linear-gradient(left, #a90329 0%, #d14233 0%, #000000 53%, #000000 85%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #a90329 0%,#d14233 0%,#000000 53%,#000000 85%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)) scroll no-repeat; */
 }
 
 .enquiry{
   color:white;
+}
+
+
+#register{
+  background-color: #d14233;
+}
+
+
+
+
+.team-entry:hover{
+  cursor:move;
+}
+
+
+#cool{
+  width: 200px;
 }
