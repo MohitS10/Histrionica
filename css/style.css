@@ -56,7 +56,7 @@
 /* 02 - RESET STYLES */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
-html,body { max-width: 100%; overflow-x: hidden; }
+html,body { max-width: 100%; overflow-x: hidden; margin: 0; }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 blockquote, q { quotes: none; }
@@ -67,7 +67,7 @@ body * { -webkit-text-size-adjust: none; }
 input:focus, select:focus, textarea:focus, button:focus { outline: none; }
 /*input, textarea, select { font-family: 'Lato', sans-serif, Arial; font-weight: 400; -webkit-appearance: none; -moz-border-radius: 0; border-radius: 0; }*/
 a, a:link, a:visited, a:active, a:hover { cursor: pointer; text-decoration: none; outline: none; }
-body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; line-height: 1; overflow-y: scroll; }
+body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; line-height: 1;  }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 03 - LOADING */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -1559,7 +1559,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .price.left { border-right: 2px solid #eaeaea; margin-bottom: 30px; }
   .price.right { border-left: 2px solid #eaeaea; }
   .map-block { height: 300px; }
-  .s-contact { margin-bottom: 30px; }
+  .s-contact { margin-bottom: 30px; margin-left: 30px; }
   .video { width: 100%; height: auto; }
   .counter-wrapper { padding-top: 20px; padding-bottom: 20px; }
   .counter-title { margin-bottom: 13px; margin-right: 0px; }
@@ -1870,9 +1870,6 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
   /*background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)) scroll no-repeat; */
 }
 
-.enquiry{
-  color:white;
-}
 
 
 #register{
@@ -1890,3 +1887,14 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
 #cool{
   width: 200px;
 }
+
+
+.contactid{
+  padding: 30px;
+  background-color: #d14233;
+  border-radius: 50px;  
+  text-align: center;
+}
+
+
+/**/
