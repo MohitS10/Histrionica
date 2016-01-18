@@ -66,7 +66,6 @@ $(function() {
 		  initialize('map-canvas');}
 
 		initSwiper();
-		$('.isotope-container').isotope({itemSelector: '.item', masonry:{gutter:0,columnWidth:'.grid-sizer'}});
 		if($(window).scrollTop()>0){
 			$('.header').addClass('scrolled');
 		} else {

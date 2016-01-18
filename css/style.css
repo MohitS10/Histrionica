@@ -1897,5 +1897,13 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
   text-align: center;
 }
 
-
+.imgreg{
+  opacity: 0.6;
+  cursor: pointer;
+}
 /**/
+
+.imgreg:hover{
+  opacity: 1;
+  width: 102%;
+}
