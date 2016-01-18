@@ -51,7 +51,7 @@
     font-family: "Exit";
     src: url(Existence-Light.ttf) format("truetype");
 }
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@font-face{ font-family: "Rock Salt";src:url(https://fonts.googleapis.com/css?family=Rock+Salt) format("truetype");}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -71,7 +71,7 @@ body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; li
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 03 - LOADING */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/*#loading { background-color: #fff; height: 100%; width: 100%; position: fixed; z-index: 200; margin-top: 0px; top: 0px; }
+#loading { background-color: #fff; height: 100%; width: 100%; position: fixed; z-index: 200; margin-top: 0px; top: 0px; }
 #loading-center { width: 100%; height: 100%; position: relative; }
 #loading-center-absolute { position: absolute; left: 50%; top: 50%; height: 50px; width: 50px; margin-top: -25px; margin-left: -25px; }
 .bigSqr { position: relative; display: inline-block; width: 40px; height: 40px; overflow: hidden; -webkit-transform-origin: bottom left; -ms-transform-origin: bottom left; -moz-transform-origin: bottom left; -o-transform-origin: bottom left; transform-origin: bottom left; -webkit-animation: bigSqrShrink 1s linear infinite; -moz-animation: bigSqrShrink 1s linear infinite; -o-animation: bigSqrShrink 1s linear infinite; animation: bigSqrShrink 1s linear infinite; }
@@ -223,7 +223,7 @@ body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; li
   100% { -webkit-transform: translate(0);
     -moz-transform: translate(0);
     -o-transform: translate(0);
-    transform: translate(0); } }*/
+    transform: translate(0); } }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 04 - GLOBAL SETTINGS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -1798,8 +1798,9 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   color:white;
   font-size:24px;
   font-weight:bold;
-  left:30%;
-  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top:50%;
 }
 
 
