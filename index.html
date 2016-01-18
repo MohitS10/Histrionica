@@ -1690,6 +1690,15 @@ Ayush Golchha<br>
 </div>
 </div>
 
+<div class="modal fade " id="yt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modalwide" role="document">
+    <div class="modal-content">
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/QfyqJZ08xDY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="1" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
 <!-- Individual -->
 <div class="modal fade" id="ind" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modalwide" role="document">
@@ -1903,7 +1912,18 @@ Ayush Golchha<br>
 
     })
     </script>
- 
+
+ <script>
+ $("#yt").on('hidden.bs.modal', function (e) {
+    $("#yt iframe").attr("src", " ");
+});
+</script>
+
+ <script> 
+$(window).load(function(){
+        $("#yt").modal('show');
+}) 
+</script>
 </body>
 </html>
 
