@@ -1798,8 +1798,9 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   color:white;
   font-size:24px;
   font-weight:bold;
-  left:25%;
-  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top:50%;
 }
 
 
