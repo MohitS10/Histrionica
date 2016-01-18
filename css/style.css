@@ -51,7 +51,7 @@
     font-family: "Exit";
     src: url(Existence-Light.ttf) format("truetype");
 }
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@font-face{ font-family: "Rock Salt";src:url(https://fonts.googleapis.com/css?family=Rock+Salt) format("truetype");}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
