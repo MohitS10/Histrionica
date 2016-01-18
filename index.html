@@ -1569,11 +1569,22 @@ Ayush Golchha<br>
       <div class="modal-body">
         <div class="container">
 		  
-		  <form class="form-horizontal">
+		  <form class="form-horizontal" action="sample.php" method="POST">
 			<fieldset>
 
 			<!-- Form Name -->
 			<legend>Register</legend>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="typeOfPlay">Register for</label>
+			  <div class="col-md-5">
+			    <select id="nameOfCollege" name="typeOfPlay" class="form-control">
+			      <option value="Street">Street Play</option>
+			      <option value="Stage">Stage Play</option>
+			    </select>
+			  </div>
+			</div>
 
 			<!-- Text input-->
 			<div class="form-group">
@@ -1656,9 +1667,9 @@ Ayush Golchha<br>
 
 			<!-- Button -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="submitform2">Submit</label>
+			<div class="col-md-4"></div>	
 			  <div class="col-md-4">
-			    <button id="submitform2" name="submitform2" class="btn btn-inverse">Button</button>
+			    <button id="submitform2" name="submitform2" class="btn btn-inverse">Submit</button>
 			  </div>
 			</div>
 
