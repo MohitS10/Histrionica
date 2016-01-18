@@ -71,7 +71,7 @@ body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; li
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 03 - LOADING */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-#loading { background-color: #fff; height: 100%; width: 100%; position: fixed; z-index: 200; margin-top: 0px; top: 0px; }
+/*#loading { background-color: #fff; height: 100%; width: 100%; position: fixed; z-index: 200; margin-top: 0px; top: 0px; }
 #loading-center { width: 100%; height: 100%; position: relative; }
 #loading-center-absolute { position: absolute; left: 50%; top: 50%; height: 50px; width: 50px; margin-top: -25px; margin-left: -25px; }
 .bigSqr { position: relative; display: inline-block; width: 40px; height: 40px; overflow: hidden; -webkit-transform-origin: bottom left; -ms-transform-origin: bottom left; -moz-transform-origin: bottom left; -o-transform-origin: bottom left; transform-origin: bottom left; -webkit-animation: bigSqrShrink 1s linear infinite; -moz-animation: bigSqrShrink 1s linear infinite; -o-animation: bigSqrShrink 1s linear infinite; animation: bigSqrShrink 1s linear infinite; }
@@ -224,7 +224,7 @@ body { font-family: 'Exit', sans-serif; font-weight: normal; font-size: 14px; li
     -moz-transform: translate(0);
     -o-transform: translate(0);
     transform: translate(0); } }
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+*//*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 04 - GLOBAL SETTINGS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 body { font-family: 'Open Sans', sans-serif; }
@@ -1897,5 +1897,13 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
   text-align: center;
 }
 
-
+.imgreg{
+  opacity: 0.6;
+  cursor: pointer;
+}
 /**/
+
+.imgreg:hover{
+  opacity: 1;
+  width: 102%;
+}

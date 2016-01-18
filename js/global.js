@@ -66,7 +66,6 @@ $(function() {
 		  initialize('map-canvas');}
 
 		initSwiper();
-		$('.isotope-container').isotope({itemSelector: '.item', masonry:{gutter:0,columnWidth:'.grid-sizer'}});
 		if($(window).scrollTop()>0){
 			$('.header').addClass('scrolled');
 		} else {
@@ -288,90 +287,7 @@ $(function() {
 	/* 09 - TIMES, TABS */
 	/*==================================================*/
 	//timer
-  	function format(number){
-    	if(number===0){
-      		return '00';
-    	}else if (number < 10) {
-          	return '0' + number;
-      	} else{
-          	return ''+number;
-      	}
-    }	
-	function setTimer(final_date){         
-		var today = new Date();
-		var finalTime = new Date(final_date);
-		var interval = finalTime - today;
-		if(interval<0) interval = 0;
-		var days = parseInt(interval/(1000*60*60*24),10);
-		var daysLeft = interval%(1000*60*60*24);
-		var hours = parseInt(daysLeft/(1000*60*60),10);
-		var hoursLeft = daysLeft%(1000*60*60);
-		var minutes = parseInt(hoursLeft/(1000*60),10);
-		var minutesLeft = hoursLeft%(1000*60);
-		var seconds = parseInt(minutesLeft/(1000),10);
-		$('.days').text(format(days));
-		$('.hours').text(format(hours));
-		$('.minutes').text(format(minutes));
-		$('.seconds').text(format(seconds));
-	}
-	if($('.counters-block').length){
-	 	var final_date  = $('.counters-block').data('finaldate');
-		setTimer(final_date);
-		setInterval(function(){setTimer(final_date);}, 1000);	 	
-	}
-
-	//countdown
-	if($('.ClassyCountdown').length){
-		var style  = $('#countdown').data('style');
-		if (style=="yellow"){
-			var styleVar = "#f3dd02";
-		} else if(style=="green"){
-			var styleVar = "#4cae51";
-		} else if(style=="red"){
-			var styleVar = "#f34135";				
-		} else if(style=="dark"){
-			var styleVar = "#9d656d";
-		} else if(style=="blue"){
-			var styleVar = "#206ab0";				
-		} else if(style=="orange"){
-			var styleVar = "#f60";
-		} else if(style=="purple"){
-			var styleVar = "#636";
-		} else if(style=="pink"){
-			var styleVar = "#ec659c";
-		} else if(style=="green-light"){
-			var styleVar = "#2bbab0";
-		} else if(style=="red-dark"){
-			var styleVar = "#861f49";
-		} else if(style=="blue-light"){
-			var styleVar = "#861f49";
-		} else if(style=="orchid"){
-			var styleVar = "#B565A7";
-		} else if(style=="pink-light"){
-			var styleVar = "#9933cc";
-		} else if(style=="princeton"){
-			var styleVar = "#ff9966";
-		} else if(style=="sandy"){
-			var styleVar = "#ff6666";
-		} else if(style=="rhodamine"){
-			var styleVar = "#cc0099";
-		} else{
-			var styleVar = "#f3dd02";
-		}
-		$('#countdown').ClassyCountdown({
-			theme: "white",
-			end: $.now() + 645600,
-			color: "#0bbf47",
-			style: {
-			  element: '',
-			  labels: false,
-			  days: {gauge: {thickness: 0.05,bgColor:"rgba(255,255,255,0)",fgColor: styleVar}},
-			  hours: {gauge: {thickness: 0.05,bgColor:"rgba(255,255,255,0)",fgColor: styleVar}},
-			  minutes: {gauge: {thickness: 0.05,bgColor:"rgba(255,255,255,0)",fgColor: styleVar}},
-			  seconds: {gauge: {thickness: 0.05,bgColor:"rgba(255,255,255,0)",fgColor: styleVar}}
-			}		
-		});
-	}	
+  		
 
     //Tabs
 	var tabFinish = 0;
@@ -461,97 +377,6 @@ $(function() {
 
 	/*==================================================*/
 	/* 11 - STYLE BAR */
-	/*==================================================*/
-	$('.conf-button').on('click', function(){
-		if ($('.style-page').hasClass('slide-right')){
-		    $('.style-page').removeClass('slide-right'); 
-			$('.conf-button span').removeClass('act');
-		}else{
-		    $('.style-page').addClass('slide-right');
-			$('.conf-button span').addClass('act');
-		}return false;			 
-    });
-
-	$('.entry').on('click', function(){
-		var prevTheme = $('body').attr('data-color');
-		var newTheme = $(this).attr('data-color');
-		if($(this).hasClass('active')) return false;
-		$(this).parent().find('.active').removeClass('active');
-		$(this).addClass('active');
-		$('body').attr('data-color', newTheme);
-		$('img').each(function() {
-		   $(this).attr("src", $(this).attr("src").replace('_'+prevTheme, '_'+newTheme));
-		});
-		$('#map-canvas').attr('data-marker', $('#map-canvas').attr('data-marker').replace('_'+prevTheme, '_'+newTheme));
-
-	  	$('.c-btn.'+prevTheme).removeClass(prevTheme).addClass(newTheme);
-	  	$('.c-btn.'+prevTheme+'-2').removeClass(prevTheme+'-2').addClass(newTheme+'-2');
-	  	$('.c-btn.hv-'+prevTheme).removeClass('hv-'+prevTheme).addClass('hv-'+newTheme);
-	  	$('.c-btn.hv-'+prevTheme+'-t').removeClass('hv-'+prevTheme+'-t').addClass('hv-'+newTheme+'-t');	
-	  
-		if(newTheme=="dark"){
-		  	$('.price.style-2.center .c-btn').attr('class', 'register-link c-btn b-50 hv-dark-o red dark');		  	
-		}
-		if(prevTheme=="dark"){
-		  	$('.c-btn.black').removeClass('black').addClass(newTheme);
-		  	$('.c-btn.black-2').removeClass('black-2').addClass(newTheme+'-2');
-		  	$('.custom-popup .c-btn').attr('class', 'c-btn b-50 black hv-yellow-o');	
-		}
-
-		$('.message-line .c-btn').attr('class', 'register-link c-btn b-50 black hv-black-o');			  		  
-	    localStorage.setItem("color", newTheme);
-	 });
-
-	/*==================================================*/
-	/* 12 - GOOGLE MAP */
-	/*==================================================*/
-	function initialize(obj) {
-		var stylesArray = {
-		'style-1' : {
-			'style': [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
-		}
-		};
-
-		var lat = $('#'+obj).attr("data-lat");
-	    var lng = $('#'+obj).attr("data-lng");
-		var contentString = $('#'+obj).attr("data-string");
-		var myLatlng = new google.maps.LatLng(lat,lng);
-		var map, marker, infowindow;
-		var image = $('#'+obj).attr("data-marker");
-		var zoomLevel = parseInt($('#'+obj).attr("data-zoom"),10);
-		var styles = stylesArray[$('#map-canvas').attr("data-style")]['style'];
-		var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
-	    
-		var mapOptions = {
-			zoom: zoomLevel,
-			disableDefaultUI: true,
-			center: myLatlng,
-	        scrollwheel: false,
-			mapTypeControlOptions: {
-	        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-			}
-		};
-		
-		map = new google.maps.Map(document.getElementById(obj), mapOptions);
-
-		map.mapTypes.set('map_style', styledMap);
-		map.setMapTypeId('map_style');
-
-		infowindow = new google.maps.InfoWindow({
-			content: contentString
-		});
-	  
-	    
-	    marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			icon: image
-		});
-
-		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
-		});
-
-	}	 
+	/*==================================================*/	 
     				
 });
