@@ -1849,7 +1849,6 @@ ul.dropdown-menu {
 
 
 @media(max-width: 479px){
-  #over{left:10%;}
 #over img{ width: 300px;}
 #over { font-size: 20px;}
 }
