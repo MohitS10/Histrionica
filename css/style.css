@@ -1656,7 +1656,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 /* MISCELLANEOUs */
 
 .theme1{
-  background: url(http://4.bp.blogspot.com/-6e7kkGy_xgA/VNNhNfPFZ1I/AAAAAAAACuM/H26cmQwQC_M/s1600/indian-street-art-16%5B3%5D.jpg);
+  background: url(assets/img/back/sdtage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1738,7 +1738,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 #theme{
-  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(http://orig14.deviantart.net/dedb/f/2011/162/d/0/runway_background_by_megumitt-d3ilql1.png) no-repeat scroll;
+  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/img/back/sdtage.jpg) no-repeat scroll;
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 120px;
