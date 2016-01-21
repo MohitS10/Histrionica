@@ -1677,6 +1677,9 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   width: 70%;
 }
 
+.modal .modalthin{
+  width: 40%;
+}
 
 .modal-title{
   font-family: 'Exit',cursive;
