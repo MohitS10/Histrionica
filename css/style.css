@@ -1742,7 +1742,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 #theme{
-  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/img/back/ahvan.jpg) no-repeat scroll;
+  background:url(../assets/img/back/ahvan.jpg) no-repeat scroll;
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 120px;
