@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+
+<?php
+require_once("dbcontroller.php");
+$db_handle = new DBController();
+$query ="SELECT * FROM tc";
+$results = $db_handle->runQuery($query);
+?>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -1509,6 +1515,22 @@ Ayush Golchha<br>
 </div>
 -->
 
+<script>
+function getState(val,val2) {
+  $.ajax({
+  type: "POST",
+  url: "get_state.php",
+  data:'college='+val+'&type='+val2,
+  success: function(data){
+    if(val2=='street')
+      $("#aaPlayName").html(data);
+    if(val2=='stage')
+      $("#chPlayName").html(data);
+  }
+  });
+}
+</script>
+
 <!-- Register -->
 <div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modalwide" role="document">
@@ -1731,19 +1753,24 @@ Ayush Golchha<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="aaCollegeName">Name Of College</label>
   <div class="col-md-5">
-    <select id="aaCollegeName" name="aaCollegeName" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+    <select id="aaCollegeName" name="aaCollegeName" class="form-control" onChange="getState(this.value,'street');" required>
+      <option value="">Select College</option>
+        <?php
+        foreach($results as $college) {
+        ?>
+        <option value="<?php echo $college["College Name"]; ?>"><?php echo $college["College Name"]; ?></option>
+        <?php
+        }
+        ?>
     </select>
-  </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="aaPlayName">Name Of Play</label>  
   <div class="col-md-5">
-  <input id="aaPlayName" name="aaPlayName" type="text" placeholder="" class="form-control input-md" required="">
-    
+    <select name="play" id="aaPlayName">
+    </select>  
   </div>
 </div>
 
@@ -1760,6 +1787,7 @@ Ayush Golchha<br>
   
           
 </div>
+
       <div id="charades" class="tab-pane fade">
         
           <form class="form-horizontal" id="chform">
@@ -1789,9 +1817,15 @@ Ayush Golchha<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="chCollegeName">Name Of College</label>
   <div class="col-md-5">
-    <select id="chCollegeName" name="chCollegeName" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+    <select id="chCollegeName" name="chCollegeName" class="form-control" onChange="getState(this.value,'stage');" required>
+      <option value="">Select College</option>
+        <?php
+        foreach($results as $college) {
+        ?>
+        <option value="<?php echo $college["College Name"]; ?>"><?php echo $college["College Name"]; ?></option>
+        <?php
+        }
+        ?>
     </select>
   </div>
 </div>
@@ -1800,8 +1834,8 @@ Ayush Golchha<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="chPlayName">Name Of Play</label>  
   <div class="col-md-5">
-  <input id="chPlayName" name="chPlayName" type="text" placeholder="" class="form-control input-md" required="">
-    
+    <select name="play" id="chPlayName">
+    </select>
   </div>
 </div>
 
@@ -1919,6 +1953,7 @@ Ayush Golchha<br>
     e.preventDefault(); 
   
     dataString = $(this).serialize();
+    alert(dataString);
     $.ajax({
     type: "POST",
       url: "submitaa.php",
