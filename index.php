@@ -1915,9 +1915,11 @@ function getState(val,val2) {
 
     <script>
     $('#ultapulta').click(function(){
+      $('#upcontent').toggleClass("spin");
       $('#upcontent').toggleClass("up");
       $('#upcontent').toggleClass("down");
       $('#ulta').toggleClass("up");
+      $('#ulta').toggleClass("spin");
       $('#ulta').toggleClass("down");
       $('#cool').show();
 

@@ -1716,11 +1716,26 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
     }
 }
 
+@-moz-keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(2520deg);
+    }
+}
+
+
 .spin{
   -webkit-animation-name: spin;
     -webkit-animation-duration: 2800ms;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
+
+  -moz-animation-name: spin;
+    -moz-animation-duration: 2800ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
 }
 
 
