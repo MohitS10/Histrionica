@@ -1810,26 +1810,6 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 
-.opaque-navbar {
-    background-color: rgba(0,0,0,0.0);
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
-}
-
-
-
-
-.opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
-.opaque-navbar li.active a:before, .opaque-navbar li:hover a:before { background: #d14233; }
-
-
-.opaque-navbar.opaque {
-    background-color: black;
-    height: 60px;
-    transition: background-color .5s ease 0s;
-}
 
 #navMain li a{font-family: 'Exit';color:#fff; background-color: transparent; font-size: 12px}
 
@@ -1845,8 +1825,12 @@ ul.dropdown-menu {
     transition: background-color .5s ease 0s;
 }
 
-.opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: #000; }
+.opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
 #navMain li a{background-color: #000;}
+
+.change1 img{
+  width: 50%;
+}
 
 }
 
@@ -1908,5 +1892,11 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
 .imgreg:hover{
   opacity: 1;
   width: 102%;
+}
+
+
+
+.change1{
+  background-color: #fff;
 }
 
