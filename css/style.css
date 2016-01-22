@@ -422,6 +422,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .item-30 { width: 30%; min-height: 1px; padding-right: 15px; padding-left: 15px; }
 .item-35 { width: 33%; min-height: 1px; padding-right: 15px; padding-left: 15px; }
 .item-10 { width: 10%; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+#beforehover {color:#000;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 12 - SERVICE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -514,7 +515,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .testimonals-position { display: inline-block; font-size: 12px; line-height: 15px; font-weight: 400; color: #fff; text-transform: uppercase; background: #feca16; padding: 8px 9px; margin-bottom: 30px; }
 .testimonals-text { font-size: 16px; line-height: 28px; font-weight: 300; color: #fff; padding-right: 95px; }
 .testimonals-text:before { content: 'â€œ'; display: inline; font-weight: 400; color: #feca16; }
-.testimonals-text:after { content: 'â€'; display: inline; font-weight: 400; color: #feca16; }
+.testimonals-text:after { content: 'â€ '; display: inline; font-weight: 400; color: #feca16; }
 .testimonals.style-2 .testimonals-position { background: transparent; padding: 0; margin-bottom: 20px; }
 .testimonals-text:before { display: none; }
 .testimonals-text:after { display: none; }
@@ -1656,7 +1657,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 /* MISCELLANEOUs */
 
 .theme1{
-  background: url(assets/img/back/sdtage.jpg);
+  background: url(assets/img/back/ahvaan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1741,7 +1742,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 
 
 #theme{
-  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/img/back/sdtage.jpg) no-repeat scroll;
+  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/img/back/ahvan.jpg) no-repeat scroll;
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 120px;
@@ -1899,4 +1900,3 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
 .change1{
   background-color: #fff;
 }
-
