@@ -1860,6 +1860,9 @@ ul.dropdown-menu {
   .modal .modalthin{
   width: 100%;
 }
+.modal .modalwide{
+  width: 100%;
+}
 #over img{ width: 300px;}
 #over { font-size: 20px;}
 }
