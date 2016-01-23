@@ -268,7 +268,7 @@ body { font-family: 'Open Sans', sans-serif; }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .main-slider { position: relative; }
 .main-slider .swiper-slide { position: relative; }
-.main-slider .fullheight { height: 50vh; position: relative; }
+.main-slider .fullheight { height: 100vh; position: relative; }
 .main-slider .vertical-align { width: 100%; padding-top: 40px; }
 .main-slider .pagination { display: none; }
 .swiper-container .pagination { margin: 41px 0 0 0; }
@@ -1536,7 +1536,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .gal-item.small .gal-desc { top: 0px; right: 0px; bottom: 0px; left: 0px; }
   .gal-item.small .gal-title { padding: 10px; } }
 /*Phones (<768px)*/
-@media (max-width: 767px) { .main-slider .fullheight { height: 350px; }
+@media (max-width: 767px) { .main-slider .fullheight { height: 250px; }
   .banner-date { font-size: 14px; line-height: 16px; letter-spacing: 2px; }
   .banner-title { font-size: 45px; line-height: 45px; letter-spacing: 2px; margin-bottom: 18px; }
   .banner-text { font-size: 13px; line-height: 18px; padding: 0 10%; margin-bottom: 27px; }
@@ -1759,11 +1759,9 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
  transition: transform 700ms ease; 
 }
 
+
 #theme{
   background: -webkit-radial-gradient(rgba(0,0,0,0.3) 99%,white 1%),url(../assets/img/back/ahvan.jpg) no-repeat scroll;
-  background: -moz-radial-gradient(rgba(0,0,0,0.3) 99%,white 1%),url(../assets/img/back/ahvan.jpg) no-repeat scroll;
-  background: -o-radial-gradient(rgba(0,0,0,0.3) 99%,white 1%),url(../assets/img/back/ahvan.jpg) no-repeat scroll;
-  background: -ms-radial-gradient(rgba(0,0,0,0.3) 99%,white 1%),url(../assets/img/back/ahvan.jpg) no-repeat scroll;
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: 120px;
@@ -1850,6 +1848,8 @@ ul.dropdown-menu {
 
 .opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
 #navMain li a{background-color: #000;}
+
+
 
 }
 
