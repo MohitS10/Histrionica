@@ -1682,6 +1682,8 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   width: 40%;
 }
 
+
+
 .modal-title{
   font-family: 'Exit',cursive;
   font-size: 40px;
@@ -1852,6 +1854,9 @@ ul.dropdown-menu {
 
 
 @media(max-width: 479px){
+  .modal .modalthin .modalwide{
+  width: 100%;
+}
 #over img{ width: 300px;}
 #over { font-size: 20px;}
 }
