@@ -265,8 +265,8 @@ $results = $db_handle->runQuery($query);
 
   <a class="conf-btn" href="#">view more</a>
   <div class="conf-autors">
-  <a href="#"><img  class="uchotu" src="assets/Team/01.jpg" alt=""></a>
-  <a href="#"><img  class="uchotu" src="assets/Team/07.jpg" alt=""></a>
+  <a href="#"><img  class="uchotu" src="assets/team/01.jpg" alt=""></a>
+  <a href="#"><img  class="uchotu" src="assets/team/07.jpg" alt=""></a>
   </div>
   </div>
   <div class="conf-overlay"></div>
@@ -281,8 +281,8 @@ $results = $db_handle->runQuery($query);
   <h4 class="conf-title">Charades</h4>
   <a class="conf-btn" href="#">view more</a>
   <div class="conf-autors">
-  <a href="#"><img  class="uchotu" src="assets/Team/02.jpg" alt=""></a>
-  <a href="#"><img  class="uchotu" src="assets/Team/08.jpg" alt=""></a>
+  <a href="#"><img  class="uchotu" src="assets/team/02.jpg" alt=""></a>
+  <a href="#"><img  class="uchotu" src="assets/team/08.jpg" alt=""></a>
   </div>
   </div>
   <div class="conf-overlay"></div>  
@@ -1140,7 +1140,7 @@ $results = $db_handle->runQuery($query);
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                         <div class="block-header style-2">
-                            <h2 class="block-title">Meet our Team</h2>
+                            <h2 class="block-title">Meet our team</h2>
                             <h4 class="block-desc hidden-xs">Drag us and make us Ulta Pulta!</h4>
                         </div>
                     </div>
@@ -1151,21 +1151,21 @@ $results = $db_handle->runQuery($query);
               <div class="row">
               <div class="col-xs-4 col-sm-3 wow slideInRight">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/01.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/01.jpg" alt=""></p>
               <p class="team-title">Raunak Bhojwani</p>
               <div class="team-pos">General Secretary</div>
               </div>
               </div>
               <div class="col-xs-4 col-sm-3 wow slideInDown">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/02.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/02.jpg" alt=""></p>
               <p class="team-title">Simran Kohli</p>
               <div class="team-pos">Joint Secretary</div>
               </div>
               </div>
               <div class="col-xs-4 col-sm-3 wow slideInDown">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/03.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/03.jpg" alt=""></p>
               <p class="team-title">Divyansh Agarwal</p>
               <div class="team-pos">Chief Histrionica Coordinator</div>
               </div>
@@ -1173,7 +1173,7 @@ $results = $db_handle->runQuery($query);
 
               <div class="col-xs-4 col-sm-3 wow slideInLeft">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/04.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/04.jpg" alt=""></p>
               <p class="team-title">Veni Arora</p>
               <div class="team-pos">Head of Corporate Communications</div>
               </div>
@@ -1181,7 +1181,7 @@ $results = $db_handle->runQuery($query);
 
               <div class="col-xs-4 col-sm-3 wow slideInRight">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/05.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/05.jpg" alt=""></p>
               <p class="team-title">Saniya Khan</p>
               <div class="team-pos">Head of Media &amp; Marketing</div>
               </div>
@@ -1189,7 +1189,7 @@ $results = $db_handle->runQuery($query);
 
               <div class="col-xs-4 col-sm-3 wow slideInUp">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/06.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/06.jpg" alt=""></p>
               <p class="team-title">Saurav Goyal</p>
               <div class="team-pos">Head of Media &amp; Marketing</div>
               </div>
@@ -1197,7 +1197,7 @@ $results = $db_handle->runQuery($query);
 
               <div class="col-xs-4 col-sm-3 wow slideInUp">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/07.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/07.jpg" alt=""></p>
               <p class="team-title">G. Harishankar</p>
               <div class="team-pos">Head of Creative</div>
               </div>
@@ -1205,7 +1205,7 @@ $results = $db_handle->runQuery($query);
 
               <div class="col-xs-4 col-sm-3 wow slideInLeft">
               <div class="team-entry" style="text-align:center;">
-              <p class="team-img"><img class="imground" src="assets/Team/08.jpg" alt=""></p>
+              <p class="team-img"><img class="imground" src="assets/team/08.jpg" alt=""></p>
               <p class="team-title">Ayush Golchha</p>
               <div class="team-pos">Head of Logistics</div>
               </div>
@@ -1324,10 +1324,10 @@ G. Harishankar<br>
 Charades is our bilingual Stage Play event, which has entertained audience since its inception and has attracted theatre lovers from across 30 colleges across the country. One can witness stories come to life as a matrix of lights decorate each strain of human emotion. This event, of national repute, has now come to represent the best of college theatre.<br><br><br>
          <b>General Instructions:</b><br>
 1. Preliminary round for Charades will be held on Saturday, 6th February 2016. <br>
- 2. Teams are requested to carry their own sound equipment for Prelim. Host college would not provide anything in this regard.
+ 2. teams are requested to carry their own sound equipment for Prelim. Host college would not provide anything in this regard.
 
  <br>
-3. 3 armless chairs, 2 armed chairs and a small table would be provided by Host College. Teams are requested to carry all other necessary props. <br>
+3. 3 armless chairs, 2 armed chairs and a small table would be provided by Host College. teams are requested to carry all other necessary props. <br>
 4. Lighting of cigarettes, matchsticks and candles is hazardous on stage and will lead to disqualification. <br>
 5. Only general lights and blackouts are allowed. <br>
 6. Time Limit: 15 minutes (Including stage set up and clearance)<br>
@@ -1444,55 +1444,7 @@ Ayush Golchha<br>
       </div>
       <div class="modal-body">
         <div style="">
-                     <form class="form-horizontal enquiry" >
-                      <fieldset>
-
-                      <!-- Form Name -->
-                      <!-- <legend>Contact Us</legend> -->
-
-                      <!-- Text input-->
-                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="cname">Name</label>  
-                        <div class="col-md-5">
-                        <input id="cname" name="cname" type="text" placeholder="" class="form-control input-md" required="">
-                          
-                        </div>
-                      </div>
-
-                      <!-- Text input-->
-                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="cemailid">Email</label>  
-                        <div class="col-md-5">
-                        <input id="cemailid" name="cemailid" type="text" placeholder="" class="form-control input-md" required="">
-                          
-                        </div>
-                      </div>
-
-                      <!-- Text input-->
-                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="ccontact">Contact Number</label>  
-                        <div class="col-md-4">
-                        <input id="ccontact" name="ccontact" type="text" placeholder="" class="form-control input-md" required="">
-                          
-                        </div>
-                      </div>
-
-                      <!-- Textarea -->
-                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="cenquiry">Query</label>
-                        <div class="col-md-4">                     
-                          <textarea class="form-control" id="cenquiry" name="cenquiry"></textarea>
-                        </div>
-                      </div>
-
-                        <div class="form-group">
-        <label class="col-md-4 control-label" for="submitform2">Submit</label>
-        <div class="col-md-4">
-          <button id="submitform2" name="submitform2" class="btn btn-inverse">Go!</button>
-        </div>
-      </div>
-                      </fieldset>
-                    </form> 
+                     <script type="text/javascript" src="https://form.jotform.me/jsform/60222384018447"></script> 
                                     </div>
       </div>
       <div class="modal-footer">
@@ -1543,19 +1495,21 @@ function getState(val,val2) {
         <div class="form-group">
         1.  One team member is first required to register the play by filling in all necessary fields, attaching the script and giving the synopsis.
 <br>
-2. Once the play is registered, the team members need to register individually. For this, the names and email id’s of all the team members would be required. Kindly note that there is no prescribed team limit for Preliminary rounds. However, team members who have not registered will not be allowed to participate.
+2. The script of the play should be sent by mail to histrionica2016@gmail.com with the name of the team and the play included in the subject of the mail. 
 <br>
-3. Please make sure to fill all the fields correctly as any changes would not be accepted.
+3. Once the play is registered, the team members need to register individually. For this, the names and email id’s of all the team members would be required. Kindly note that there is no prescribed team limit for Preliminary rounds. However, team members who have not registered will not be allowed to participate.
 <br>
-4. Registrations close at 11:59PM on 28th January 2016 (for Aahvaan: Street Play Event) and on 11:59PM on 2nd February 2016 (for Charades: Stage Play Event). Any entries post that would not be accepted.
+4. Please make sure to fill all the fields correctly as any changes would not be accepted.
 <br>
-5. Once we receive your registration along with the script, we will be sending you a mail to confirm the same. This mail does not guarantee your participation in the Preliminary Rounds of Histrionica.
+5. Registrations close at 11:59PM on 28th January 2016 (for Aahvaan: Street Play Event) and on 11:59PM on 2nd February 2016 (for Charades: Stage Play Event). Any entries post that would not be accepted.
 <br>
-6. We follow a script screening after which the selected teams will get through to our Preliminary Rounds. An email would be sent to confirm your participation and provide the slot. 
+6. Once we receive your registration along with the script, we will be sending you a mail to confirm the same. This mail does not guarantee your participation in the Preliminary Rounds of Histrionica.
 <br>
-7. The proposed dates for Preliminary Rounds are Sunday, 31st January 2016 (for Aahvaan: Street Play Event) and Saturday, 6th February 2016 (for Charades: Stage Play Event).
+7. There follows a script screening after which the selected teams will get through to our Preliminary Rounds. An email would be sent to confirm your participation and provide the slot.  
 <br>
-8. Follow our <a href="https://www.facebook.com/histrionica.srcc" target="_blank">Facebook Page </a> for further updates.<br><br>
+8. The proposed dates for Preliminary Rounds are Sunday, 31st January 2016 (for Aahvaan: Street Play Event) and Saturday, 6th February 2016 (for Charades: Stage Play Event).
+<br>
+9. Follow our <a href="https://www.facebook.com/histrionica.srcc" target="_blank">Facebook Page </a> for further updates.<br><br>
         </div>
         <div class="form-group">
           <div class="col-md-6">
@@ -1574,7 +1528,7 @@ function getState(val,val2) {
 </div>
 </div>
 
-<!-- Team Coordinator -->
+<!-- team Coordinator -->
 <div class="modal fade" id="teamc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modalwide" role="document">
     <div class="modal-content">
@@ -1621,16 +1575,16 @@ function getState(val,val2) {
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="tcTeamMembers">Number Of Team Members</label>  
+    <label class="col-md-4 control-label" for="tcteamMembers">Number Of team Members</label>  
     <div class="col-md-4">
-    <input id="tcTeamMembers" name="tcTeamMembers" type="text" placeholder="" class="form-control input-md" required="">
+    <input id="tcteamMembers" name="tcteamMembers" type="text" placeholder="" class="form-control input-md" required="">
     <span class="error e1">Enter Numbers Only</span>  
     </div>
   </div>
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="coord1">Team Coordinator 1</label>  
+    <label class="col-md-4 control-label" for="coord1">team Coordinator 1</label>  
     <div class="col-md-5">
       <input id="coord1" name="coord1" type="text" placeholder="" class="form-control input-md" required="">
     </div>
@@ -1647,7 +1601,7 @@ function getState(val,val2) {
 
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="coord2">Team Coordinator 2</label>  
+    <label class="col-md-4 control-label" for="coord2">team Coordinator 2</label>  
     <div class="col-md-5">
     <input id="coord2" name="coord2" type="text" placeholder="" class="form-control input-md" required="">
       
@@ -1668,14 +1622,6 @@ function getState(val,val2) {
     <label class="col-md-4 control-label" for="synopsis">Synopsis (limit 100 words)</label>
     <div class="col-md-4">                     
       <textarea class="form-control" id="synopsis" name="synopsis" required></textarea>
-    </div>
-  </div>
-
-  <!-- File Button --> 
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="script">Script</label>
-    <div class="col-md-4">
-      <input id="script" name="script" class="input-file" type="file">
     </div>
   </div>
 
@@ -1938,7 +1884,7 @@ function getState(val,val2) {
     $(".error").hide();
   
   flag = true; //Check this flag
-  if(/^\d+$/.test($('#tcTeamMembers').val()) === false){ $('.e1').show(); flag=false;}
+  if(/^\d+$/.test($('#tcteamMembers').val()) === false){ $('.e1').show(); flag=false;}
   if(/^\d+$/.test($('#contact1').val()) === false){ $('.e2').show(); flag=false;}
   if(/^\d+$/.test($('#contact2').val()) === false){ $('.e3').show(); flag=false;}
 

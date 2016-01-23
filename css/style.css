@@ -51,6 +51,8 @@
     font-family: "Exit";
     src: url(Existence-Light.ttf) format("truetype");
 }
+@font-face{ font-family: "Jungle";src:url(jungle.ttf) format("truetype");}
+@font-face{ font-family: "Cent";src:url(centabel.ttf) format("truetype");}
 @font-face{ font-family: "Rock Salt";src:url(https://fonts.googleapis.com/css?family=Rock+Salt) format("truetype");}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 02 - RESET STYLES */
@@ -1767,7 +1769,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 }
 
 .yo{
-  font-family: 'Rock Salt',cursive;
+  font-family: 'Jungle',cursive;
 }
 
 .themr{
@@ -1775,6 +1777,7 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
   color: #fff;
   float: left;
   text-align: left;
+  font-family: 'Cent',
 }
 
 .dirtra{
