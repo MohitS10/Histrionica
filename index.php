@@ -1757,12 +1757,16 @@ function getState(val,val2) {
       <option value="">Select College</option>
         <?php
         foreach($results as $college) {
+           if($college["Street / Stage"]=='street')
+          {
         ?>
         <option value="<?php echo $college["College Name"]; ?>"><?php echo $college["College Name"]; ?></option>
         <?php
         }
+        }
         ?>
     </select>
+</div>
 </div>
 
 <!-- Text input-->
@@ -1821,9 +1825,12 @@ function getState(val,val2) {
       <option value="">Select College</option>
         <?php
         foreach($results as $college) {
+          if($college["Street / Stage"]=='stage')
+          {
         ?>
         <option value="<?php echo $college["College Name"]; ?>"><?php echo $college["College Name"]; ?></option>
         <?php
+          }
         }
         ?>
     </select>
@@ -1915,11 +1922,9 @@ function getState(val,val2) {
 
     <script>
     $('#ultapulta').click(function(){
-      $('#upcontent').toggleClass("spin");
       $('#upcontent').toggleClass("up");
       $('#upcontent').toggleClass("down");
       $('#ulta').toggleClass("up");
-      $('#ulta').toggleClass("spin");
       $('#ulta').toggleClass("down");
       $('#cool').show();
 
