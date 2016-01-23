@@ -268,7 +268,7 @@ body { font-family: 'Open Sans', sans-serif; }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .main-slider { position: relative; }
 .main-slider .swiper-slide { position: relative; }
-.main-slider .fullheight { height: 100vh; position: relative; }
+.main-slider .fullheight { height: 50vh; position: relative; }
 .main-slider .vertical-align { width: 100%; padding-top: 40px; }
 .main-slider .pagination { display: none; }
 .swiper-container .pagination { margin: 41px 0 0 0; }
@@ -1536,7 +1536,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .gal-item.small .gal-desc { top: 0px; right: 0px; bottom: 0px; left: 0px; }
   .gal-item.small .gal-title { padding: 10px; } }
 /*Phones (<768px)*/
-@media (max-width: 767px) { .main-slider .fullheight { height: 500px; }
+@media (max-width: 767px) { .main-slider .fullheight { height: 350px; }
   .banner-date { font-size: 14px; line-height: 16px; letter-spacing: 2px; }
   .banner-title { font-size: 45px; line-height: 45px; letter-spacing: 2px; margin-bottom: 18px; }
   .banner-text { font-size: 13px; line-height: 18px; padding: 0 10%; margin-bottom: 27px; }
@@ -1572,7 +1572,7 @@ body[data-color="rhodamine"] .speaker-social.style-2 a:hover { background: #D45A
   .team-entry { max-width: 400px; margin: 0 auto 15px auto; }
   .left-banner-title { font-size: 29px; line-height: 29px; }
   .left-banner-block { position: static; background-image: none !important; margin-bottom: 30px; }
-  .left-banner-block .center-image { display: block !important; width: 100%; }
+  .left-banner-block .center-image { display: block !important; width: 50%; }
   body[data-color="dark"] .counter-wrapper.style-2 { background: #222222; } }
 /*Mobiles (<480px)*/
 @media (max-width: 479px) { .banner-date { font-size: 14px; line-height: 16px; letter-spacing: 2px; }
@@ -1849,10 +1849,6 @@ ul.dropdown-menu {
 .opaque-navbar li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
 #navMain li a{background-color: #000;}
 
-.change1 img{
-  width: 50%;
-}
-
 }
 
 
@@ -1863,6 +1859,7 @@ ul.dropdown-menu {
 .modal .modalwide{
   width: 100%;
 }
+
 #over img{ width: 300px;}
 #over { font-size: 20px;}
 }
@@ -1926,3 +1923,4 @@ background: linear-gradient(to right, #a90329 0%,#d14233 0%,#000000 53%,#000000 
 .change1{
   background-color: #fff;
 }
+

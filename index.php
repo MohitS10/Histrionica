@@ -116,7 +116,7 @@ $results = $db_handle->runQuery($query);
                       </div>
                         
                   </div>
-                    <div class="swiper-slide" data-val="1">
+                    <div class="swiper-slide hidden-xs" data-val="1">
                       <div class="fullheight change1">
                           <img class="center-image" src="assets/img/back/hands.jpg" alt="">
                           <!-- <div class="vertical-align">
