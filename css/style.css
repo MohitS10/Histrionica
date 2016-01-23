@@ -1857,7 +1857,7 @@ ul.dropdown-menu {
 
 
 @media(max-width: 479px){
-  .modal .modalthin .modalwide{
+  .modal .modalthin{
   width: 100%;
 }
 #over img{ width: 300px;}
