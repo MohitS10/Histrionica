@@ -305,7 +305,7 @@ $results = $db_handle->runQuery($query);
   <div class="conf-item small">
   <img class="center-image" src="assets/img/contentforevents/TheStageOutside.jpg" alt="">
   <div class="conf-info style-2">
-  <h4 class="conf-title" id="beforehover">The Stage</h4>
+  <h4 class="conf-title">The Stage</h4>
   <a class="conf-btn" href="#">view more</a>
   </div>
   <div class="conf-overlay"></div>  
