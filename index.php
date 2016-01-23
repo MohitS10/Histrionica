@@ -1,10 +1,3 @@
-
-<?php
-require_once("dbcontroller.php");
-$db_handle = new DBController();
-$query ="SELECT * FROM tc";
-$results = $db_handle->runQuery($query);
-?>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -22,6 +15,14 @@ $results = $db_handle->runQuery($query);
     <title>HISTRIONICA 2016</title>
 </head>
 <body data-color="red">
+
+  <?php
+require_once("dbcontroller.php");
+$db_handle = new DBController();
+$query ="SELECT * FROM tc";
+$results = $db_handle->runQuery($query);
+?>
+
 
     <!-- LOADER -->
     <!-- <div id="loading">
