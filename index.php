@@ -1624,7 +1624,7 @@ function getState(val,val2) {
     <label class="col-md-4 control-label" for="tcTeamMembers">Number Of Team Members</label>  
     <div class="col-md-4">
     <input id="tcTeamMembers" name="tcTeamMembers" type="text" placeholder="" class="form-control input-md" required="">
-    <span class="error e1 hidden">Enter Numbers Only</span>  
+    <span class="error e1">Enter Numbers Only</span>  
     </div>
   </div>
 
@@ -1641,7 +1641,7 @@ function getState(val,val2) {
     <label class="col-md-4 control-label" for="contact1">Contact Number</label>  
     <div class="col-md-4">
     <input id="contact1" name="contact1" type="text" placeholder="" class="form-control input-md" required="">
-    <span class="error e2 hidden">Enter Numbers Only</span> 
+    <span class="error e2">Enter Numbers Only</span> 
     </div>
   </div>
 
@@ -1659,8 +1659,8 @@ function getState(val,val2) {
     <label class="col-md-4 control-label" for="contact2">Contact Number</label>  
     <div class="col-md-4">
     <input id="contact2" name="contact2" type="text" placeholder="" class="form-control input-md" required="">
-    <span class="error e3 hidden">Enter Numbers Only</span>   
-    </div>
+    <span class="error e3">Enter Numbers Only</span>
+  </div>
   </div>
 
   <!-- Textarea -->
@@ -1917,6 +1917,7 @@ function getState(val,val2) {
   <script>
   $(function() {
   $( ".team-entry" ).draggable();
+  $(".error").hide();
 });
   </script>
 
@@ -1933,7 +1934,8 @@ function getState(val,val2) {
 
 <script>
   $("#formtc").submit(function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
+    $(".error").hide();
   
   flag = true; //Check this flag
   if(/^\d+$/.test($('#tcTeamMembers').val()) === false){ $('.e1').show(); flag=false;}
