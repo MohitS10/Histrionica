@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 		$con2 = mysqli_real_escape_string($conn,$_POST['contact2']);
 		$syn = mysqli_real_escape_string($conn,$_POST['synopsis']);
 		
-		$q = "INSERT INTO tc VALUES('$typeOfPlay','$college','$play','$num','$tc1','$con1','$tc2','$con2','$syn',now());"; 
+		$q = "INSERT INTO tc(Type,CName,PName,Num,TC1,Contact1,TC2,Contact2,Synopsis,Time) VALUES('$typeOfPlay','$college','$play','$num','$tc1','$con1','$tc2','$con2','$syn',now());"; 
 		
 		mysqli_query($conn, $q);
 
