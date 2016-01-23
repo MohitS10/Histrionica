@@ -5,8 +5,8 @@
 		$contact = mysqli_real_escape_string($conn,$_POST['ccontact']);
 		$cenquiry = mysqli_real_escape_string($conn,$_POST['cenquiry']);
 		
-		$subject = "Mail From" + $name + " Email: " + $email + " Contact: " + $contact ;
-
-		mail("histrionica2016@gmail.com", $subject .$email, $cenquiry);
+		$subject = "Mail From" + $name + " Contact: " + $contact ;
+		$fromheader = "From: " + $email ;
+		mail("histrionica2016@gmail.com", $subject, $cenquiry, $fromheader);
 		
 ?>
